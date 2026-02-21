@@ -17,6 +17,7 @@ export function JobCard({ job, candidate, index }: JobCardProps) {
       uuid: candidate.uuid,
       jobId: job.id,
       candidateId: candidate.candidateId,
+      applicationId: candidate.applicationId,
       repoUrl: repoUrl.trim(),
     });
   }

@@ -5,8 +5,6 @@ import type { ApplyResponse } from '../interfaces/ApplyResponse.interface';
 
 const BASE_URL = import.meta.env.VITE_BASE_URL || '';
 
-console.log(BASE_URL);
-
 async function handleResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
     let message = `HTTP ${response.status}`;
